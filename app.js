@@ -217,12 +217,12 @@ app.get('/google/callback', passport.authenticate('google', { failureRedirect: '
     res.redirect('/success');
 });
 app.get('/logout', (req, res) => {
+    console.log(req.session.name + " - Logout successfully");
     req.logout(function (err) {
         if (err) {
             console.error('Error during logout:', err);
             return res.status(500).send('Error during logout');
         }
-        console.log(req.session.name + " - Logout successfully");
         req.session.name = null;
         req.session.email = null;
         req.session.pic = null;
