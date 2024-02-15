@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="css/history.css">
+    <title>EcoSnap</title>
+</head>
+
+<body>
+    <%- include('nav') %>
+        <div class="container">
+            <% history.forEach(entry=> { %>
+                <div class="card">
+                    <div class="image-container">
+                        <img src="uploads/<%= entry.path %>" alt="<%= entry.title %>">
+                    </div>
+                    <div class="card-content">
+                        <h3>
+                            <%= entry.title %>
+                        </h3>
+                        <p><strong>Description:</strong>
+                            <%= entry.description %>
+                        </p>
+                        <p><strong>Address:</strong>
+                            <%= entry.address %>
+                        </p>
+                        <p><strong>District:</strong>
+                            <%= entry.district %>
+                        </p>
+                        <p><strong>State:</strong>
+                            <%= entry.state %>
+                        </p>
+                        <form action="/delete" method="POST">
+                            <div class="form-group">
+                                <input type="text" id="entry" name="entry" value="<%= entry._id %>" required>
+                            </div>
+                            <button type="submit">Delete</button>
+                        </form>  
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+</body>
+
+</html>
