@@ -23,7 +23,6 @@ Before setting up the EcoSnap server, ensure the following prerequisites are met
         ```
 
 #### MongoDB Installation
-#### Windows
 1. **Download MongoDB**:
     - Visit the [official MongoDB website](https://www.mongodb.com/try/download/community).
     - Choose Windows as the platform and download the MongoDB installer.
