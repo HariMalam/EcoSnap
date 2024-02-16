@@ -106,7 +106,13 @@ For detailed instructions on setting up a Google OAuth client, refer to the [Goo
     npm install
     ```
 
-4. Create a `.env` file in the project root directory and configure the following environment variables:
+4. Open Visual Sudio Code:
+    ```
+    code .
+    ```
+
+
+5. Create a `.env` file in the project root directory and configure the following environment variables:
     ```
     MONGODB_URI=your_mongodb_uri
     GOOGLE_CLIENT_ID=your_google_client_id
@@ -114,11 +120,11 @@ For detailed instructions on setting up a Google OAuth client, refer to the [Goo
     GOOGLE_CALLBACK_URL=your_google_callback_url
     ```
 
-5. Start the EcoSnap server:
+6. Start the EcoSnap server:
     ```
     npm start
     ```
-    
+
 ## Usage
 - The EcoSnap server will be accessible at http://localhost:5000 after starting.
 - Users can sign in with their Google account to access the platform.
