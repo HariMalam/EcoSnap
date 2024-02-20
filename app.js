@@ -12,7 +12,7 @@ const Form = require('./models/form');
 
 const app = express();
 
-const mongoURI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/ecosnap';
+const mongoURI = process.env.MONGODB_URI || 'mongodb+srv://hari:Hari5291@cluster0.efp2vcw.mongodb.net/ecosnap' || 'mongodb://127.0.0.1:27017/ecosnap';
 mongoose.connect(mongoURI);
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
