@@ -80,15 +80,6 @@ Before setting up the EcoSnap server, ensure the following prerequisites are met
 
 
 
-### Google OAuth Client Setup
-To enable Google OAuth authentication, you'll need to set up a Google OAuth client. Follow these steps:
-1. Go to the [Google Developers Console](https://console.developers.google.com/).
-2. Create a new project and enable the Google+ API.
-3. Create credentials for your project (OAuth client ID).
-4. Configure the authorized redirect URIs for your application, including the callback URL.
-
-For detailed instructions on setting up a Google OAuth client, refer to the [Google OAuth 2.0 Documentation](https://developers.google.com/identity/protocols/oauth2).
-
 ## Installation
 1. Clone this repository to your local machine:
     ```
